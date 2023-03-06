@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS RESPONSIVO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>VORTEX Gaming</h1>
+            <div class="botao-menu">
+                <button type="button">...</button>
+            </div>
+            <form>
+                <a href="#">
+                    Sobre a loja
+                </a>
+                <a href="#">
+                    Produtos
+                </a>
+                <input type="search" placeholder="Busque no site">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </header>
+        <div class="container conteudo">
+            <img src="./images/logo.jpg" alt="">
+            <div class="sobre">
+                <h2>Sobre a loja</h2>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem id nam porro, soluta commodi facilis consequatur eum dolorum ratione enim? Voluptatem, quo totam excepturi minus iste non illum esse ab?
+                </P>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem id nam porro, soluta commodi facilis consequatur eum dolorum ratione enim? Voluptatem, quo totam excepturi minus iste non illum esse ab?
+                </P>
+            </div>
+        </div>
+        <section>
+            <div class="produtos container">
+                <h2>Produtos</h2>
+                <ul class="container-flex lista-items">
+                    <li class="divisao">
+                        <img src="./images/placa de video.jpg" alt="">
+                        <h3>Placa De Video Pcyes Gtx 1660</h3>
+                        <strong>R$ 1.699,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li class="divisao">
+                        <img src="./images/placa de video.jpg" alt="">
+                        <h3>Placa De Video Pcyes Gtx 1660</h3>
+                        <strong>R$ 1.699,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li class="divisao">
+                        <img src="./images/placa de video.jpg" alt="">
+                        <h3>Placa De Video Pcyes Gtx 1660</h3>
+                        <strong>R$ 1.699,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li class="divisao">
+                        <img src="./images/placa de video.jpg" alt="">
+                        <h3>Placa De Video Pcyes Gtx 1660</h3>
+                        <strong>R$ 1.699,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('.botao-menu button').click(function(){
+                    $('form a').slideToggle()
+                })
+            })
+        </script>
+    </body>
+</html>
